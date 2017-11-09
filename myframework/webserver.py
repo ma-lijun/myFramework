@@ -116,6 +116,7 @@ def main():
         print("输入参数错误")
         exit()
 
+    # 服务器的启动入口，传参数"app"进入自己的框架
     http_server = HTTPServer(app)
     http_server.bind_and_listen(8080)
     http_server.start()
